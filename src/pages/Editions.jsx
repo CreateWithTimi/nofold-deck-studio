@@ -1,19 +1,29 @@
-import DeckGrid from '../components/deck/DeckGrid.jsx'
+import CatalogueGrid from '../components/catalogue/CatalogueGrid.jsx'
 import PageIntro from '../components/ui/PageIntro.jsx'
-import { editionDecks } from '../data/decks.js'
+import { customDeckProjects, editionDecks } from '../data/decks.js'
 
 function Editions() {
   return (
-    <section className="page-section">
-      <PageIntro kicker="NO FOLD Editions" title="Original game editions">
-        Consumer NO FOLD card game releases live here. Prices, availability, and
-        edition details should only be added when confirmed.
-      </PageIntro>
-      <DeckGrid
+    <div className="catalogue-page">
+      <section className="page-section catalogue-page__intro">
+        <PageIntro kicker="EDITIONS" title="Find your table.">
+          Original NO FOLD games and conversation decks designed for different
+          kinds of people, moods and moments.
+        </PageIntro>
+      </section>
+
+      <CatalogueGrid
+        title="NO FOLD Editions"
         decks={editionDecks}
-        emptyMessage="Edition entries are not populated yet."
+        emptyMessage="NO FOLD Edition entries are not populated yet."
       />
-    </section>
+
+      <CatalogueGrid
+        title="Conversation Decks"
+        decks={customDeckProjects}
+        emptyMessage="Conversation deck entries are not populated yet."
+      />
+    </div>
   )
 }
 

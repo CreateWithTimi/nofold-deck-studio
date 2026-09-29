@@ -1,11 +1,14 @@
 :root {
   --color-cream: #f7f0e3;
   --color-cream-deep: #efe2ca;
+  --color-cream-light: #fff8eb;
   --color-ink: #11100d;
   --color-muted: #6f665a;
   --color-red: #9f1d20;
   --color-red-deep: #681216;
+  --color-red-soft: #c34a3d;
   --color-gold: #b99755;
+  --color-gold-soft: #d4bd82;
   --color-line: rgba(17, 16, 13, 0.14);
   --color-surface: #fffaf0;
 
@@ -27,4 +30,6 @@
   --radius-md: 8px;
   --max-page: 1120px;
   --shadow-soft: 0 18px 60px rgba(17, 16, 13, 0.08);
+  --shadow-product: 0 28px 80px rgba(49, 34, 19, 0.2);
+  --shadow-product-high: 0 18px 44px rgba(49, 34, 19, 0.18);
 }

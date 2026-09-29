@@ -1,18 +1,27 @@
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import SiteFooter from './SiteFooter.jsx'
 
 const navItems = [
-  { to: '/', label: 'Home', end: true },
   { to: '/editions', label: 'Editions' },
-  { to: '/build-deck', label: 'Custom Decks' },
+  { to: '/build-deck', label: 'Build Yours' },
   { to: '/about', label: 'About' },
 ]
 
+const mobileNavItems = [{ to: '/', label: 'Home', end: true }, ...navItems]
+
 function SiteLayout() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  function closeMenu() {
+    setIsMenuOpen(false)
+  }
+
   return (
     <div className="app-shell">
       <header className="site-header">
         <div className="site-header__inner">
-          <NavLink className="brand-mark" to="/">
+          <NavLink className="brand-mark" onClick={closeMenu} to="/">
             NO FOLD
           </NavLink>
           <nav className="site-nav" aria-label="Primary navigation">
@@ -22,6 +31,43 @@ function SiteLayout() {
               </NavLink>
             ))}
           </nav>
+          <button
+            aria-controls="mobile-navigation"
+            aria-expanded={isMenuOpen}
+            aria-label={
+              isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'
+            }
+            className="menu-trigger"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            type="button"
+          >
+            <span />
+            <span />
+          </button>
+        </div>
+        <div
+          className={`mobile-nav-panel${isMenuOpen ? ' is-open' : ''}`}
+          id="mobile-navigation"
+        >
+          <nav aria-label="Mobile navigation">
+            {mobileNavItems.map((item) => (
+              <NavLink
+                end={item.end}
+                key={item.to}
+                onClick={closeMenu}
+                to={item.to}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+          <NavLink
+            className="button mobile-nav-panel__cta"
+            onClick={closeMenu}
+            to="/build-deck"
+          >
+            Build Your Deck
+          </NavLink>
         </div>
       </header>
 
@@ -29,12 +75,7 @@ function SiteLayout() {
         <Outlet />
       </main>
 
-      <footer className="site-footer">
-        <div className="site-footer__inner">
-          <strong>NO FOLD Deck Studio</strong>
-          <span className="muted">Editions and custom physical card decks.</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

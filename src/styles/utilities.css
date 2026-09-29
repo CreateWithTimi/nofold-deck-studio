@@ -10,10 +10,29 @@
   min-height: 44px;
   padding: 0.75rem 1rem;
   text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .button--secondary {
   background: transparent;
+  border-color: rgba(17, 16, 13, 0.28);
+  color: var(--color-ink);
+}
+
+.button:hover {
+  background: var(--color-red);
+  border-color: var(--color-red);
+  color: var(--color-cream);
+  transform: translateY(-1px);
+}
+
+.button--secondary:hover {
+  background: var(--color-cream-light);
+  border-color: var(--color-gold);
   color: var(--color-ink);
 }
 
