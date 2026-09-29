@@ -1,16 +1,18 @@
-# NO FOLD Deck Studio Project Brief
+# CWT Deck Studio Project Brief
 
 ## Product Purpose
 
-NO FOLD Deck Studio is a mobile-first web platform for showcasing original NO FOLD card game editions and custom physical card deck work.
+CWT Deck Studio is a mobile-first web platform for showcasing original games, conversation decks, and custom physical card deck work.
+
+NO FOLD is an original consumer game and IP within CWT Deck Studio.
 
 The platform should feel like premium physical card packaging, playful game culture, and editorial product design. It should be content-led, visual, and restrained rather than a generic software dashboard.
 
-## NO FOLD Editions vs Custom Decks
+## Original Products vs Custom Deck Services
 
-NO FOLD Editions is the original consumer game and IP side of the platform. It exists to present official NO FOLD releases, product details, photography, availability, and pricing when those details are confirmed.
+Original Products includes NO FOLD releases and CWT Deck Studio conversation decks. It exists to present product details, photography, availability, and pricing when those details are confirmed.
 
-Custom Decks is the customization and service side of the platform. It exists for individuals, brands, restaurants, communities, events, and organizations that want to request custom physical card decks.
+Custom Deck Services is the customization side of CWT Deck Studio. It exists for individuals, brands, restaurants, communities, events, and organizations that want to request custom physical card decks.
 
 Previous custom projects should be treated as portfolio or case-study products unless explicitly marked for sale.
 

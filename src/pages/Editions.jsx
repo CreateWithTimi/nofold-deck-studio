@@ -7,8 +7,8 @@ function Editions() {
     <div className="catalogue-page">
       <section className="page-section catalogue-page__intro">
         <PageIntro kicker="EDITIONS" title="Find your table.">
-          Original NO FOLD games and conversation decks designed for different
-          kinds of people, moods and moments.
+          Original games and conversation decks from CWT Deck Studio, built for
+          different people, moods and moments.
         </PageIntro>
       </section>
 

@@ -14,9 +14,9 @@ function SiteFooter() {
       <div className="site-footer__inner">
         <div className="site-footer__brand">
           <NavLink className="site-footer__wordmark" to="/">
-            NO FOLD
+            CWT Deck Studio
           </NavLink>
-          <p>Cards worth putting on the table.</p>
+          <p>Decks worth putting on the table.</p>
         </div>
 
         <nav className="site-footer__nav" aria-label="Footer navigation">
@@ -29,7 +29,7 @@ function SiteFooter() {
 
         <div className="site-footer__meta">
           <span>Designed × Produced by CreateWithTimi</span>
-          <span>© {currentYear} NO FOLD</span>
+          <span>© {currentYear} CWT Deck Studio</span>
         </div>
       </div>
     </footer>

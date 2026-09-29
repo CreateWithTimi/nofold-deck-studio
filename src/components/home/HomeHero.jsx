@@ -5,15 +5,15 @@ function HomeHero() {
     <section className="home-hero" aria-labelledby="home-hero-title">
       <div className="home-hero__content">
         <div className="home-hero__copy">
-          <h1 id="home-hero-title">Cards worth putting on the table.</h1>
+          <h1 id="home-hero-title">Decks worth putting on the table.</h1>
           <p>
-            Play NO FOLD or create a custom deck for your people, brand or
-            occasion.
+            Original games, conversation decks and custom card experiences by
+            CWT Deck Studio.
           </p>
         </div>
         <div className="home-hero__actions" aria-label="Hero actions">
           <Button to="/editions" className="home-hero__button">
-            Explore NO FOLD
+            Explore Decks
           </Button>
           <Button
             to="/build-deck"

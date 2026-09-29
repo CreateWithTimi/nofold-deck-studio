@@ -1,13 +1,13 @@
-# NO FOLD Deck Studio
+# CWT Deck Studio
 
-Mobile-first React foundation for NO FOLD Deck Studio.
+Mobile-first React platform for CWT Deck Studio.
 
 ## Purpose
 
-NO FOLD Deck Studio has two sides:
+CWT Deck Studio brings together original card products and custom deck services:
 
-- NO FOLD Editions: original consumer card game releases and edition showcases.
-- Custom Decks: a customization and service side for physical card deck projects.
+- Original products: NO FOLD editions and conversation decks for different people, moods, and moments.
+- Custom Deck Services: physical card deck design for individuals, brands, restaurants, communities, events, and organizations.
 
 The current foundation is intentionally light: route structure, reusable components, styling tokens, page placeholders, and data-first deck content.
 

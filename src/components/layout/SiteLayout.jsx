@@ -22,7 +22,7 @@ function SiteLayout() {
       <header className="site-header">
         <div className="site-header__inner">
           <NavLink className="brand-mark" onClick={closeMenu} to="/">
-            NO FOLD
+            CWT DECK STUDIO
           </NavLink>
           <nav className="site-nav" aria-label="Primary navigation">
             {navItems.map((item) => (
