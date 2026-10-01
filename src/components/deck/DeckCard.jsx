@@ -41,6 +41,9 @@ function DeckCard({ deck }) {
       <div className="deck-card__meta">
         <span className="deck-card__eyebrow">{deck.typeLabel}</span>
         <h3>{deckName}</h3>
+        {deck.priceLabel ? (
+          <span className="deck-card__price">{deck.priceLabel}</span>
+        ) : null}
         {deck.summary ? <p>{deck.summary}</p> : null}
         <span className="deck-card__cta">{ctaLabel}</span>
       </div>

@@ -286,6 +286,452 @@ textarea:focus-visible {
   max-width: 680px;
 }
 
+.custom-work-page {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 235, 0.48), transparent 24rem),
+    var(--color-cream);
+}
+
+.custom-work-page__intro {
+  padding-bottom: var(--space-6);
+}
+
+.custom-work-showcase {
+  margin-inline: auto;
+  padding-bottom: var(--space-8);
+  width: min(100% - 2rem, var(--max-page));
+}
+
+.custom-work-grid {
+  display: grid;
+  gap: var(--space-7) var(--space-5);
+}
+
+.custom-work-card__link {
+  color: var(--color-ink);
+  display: grid;
+  gap: var(--space-4);
+  text-decoration: none;
+}
+
+.custom-work-card__media,
+.custom-work-detail__media {
+  aspect-ratio: 4 / 5;
+  background: var(--color-cream-deep);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-work-card__media img,
+.custom-work-detail__media img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.custom-work-card__fallback {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-work-card__fallback > span {
+  color: currentColor;
+  font-size: 0.7rem;
+  font-weight: 900;
+  left: var(--space-4);
+  letter-spacing: 0.12em;
+  position: absolute;
+  text-transform: uppercase;
+  top: var(--space-4);
+}
+
+.custom-work-card__deck {
+  aspect-ratio: 5 / 7;
+  border: 1px solid rgba(255, 248, 235, 0.34);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-product-high);
+  position: absolute;
+  transition: transform 220ms ease;
+  width: 48%;
+}
+
+.custom-work-card__deck--back {
+  background: var(--color-ink);
+  left: 19%;
+  top: 24%;
+  transform: rotate(-10deg);
+}
+
+.custom-work-card__deck--front {
+  align-items: end;
+  background: var(--color-cream-light);
+  color: var(--color-ink);
+  display: flex;
+  justify-content: center;
+  left: 35%;
+  padding: var(--space-4);
+  top: 19%;
+  transform: rotate(8deg);
+}
+
+.custom-work-card__deck--front strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.05;
+  overflow-wrap: break-word;
+}
+
+.custom-work-card__media--hospitality {
+  background:
+    radial-gradient(circle at 72% 24%, rgba(212, 189, 130, 0.24), transparent 24%),
+    #163427;
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--wedding {
+  background:
+    linear-gradient(135deg, rgba(159, 29, 32, 0.12), transparent 52%),
+    var(--color-cream-deep);
+  color: var(--color-red-deep);
+}
+
+.custom-work-card__media--birthday {
+  background:
+    linear-gradient(155deg, transparent 54%, rgba(185, 151, 85, 0.44) 54% 58%, transparent 58%),
+    var(--color-red);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--event {
+  background:
+    radial-gradient(circle at 28% 30%, rgba(195, 74, 61, 0.72), transparent 12%),
+    linear-gradient(145deg, #171310, #090807);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--brand {
+  background:
+    linear-gradient(90deg, rgba(17, 16, 13, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(17, 16, 13, 0.09) 1px, transparent 1px),
+    var(--color-cream-light);
+  background-size: 2.25rem 2.25rem;
+  color: var(--color-ink);
+}
+
+.custom-work-card__media--community {
+  background:
+    radial-gradient(circle at 74% 26%, rgba(212, 189, 130, 0.3), transparent 25%),
+    var(--color-red-deep);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--collaboration {
+  background:
+    linear-gradient(145deg, transparent 44%, rgba(159, 29, 32, 0.76) 44% 67%, transparent 67%),
+    var(--color-ink);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--cafe-conversation {
+  background:
+    radial-gradient(circle at 72% 20%, rgba(212, 189, 130, 0.38), transparent 26%),
+    linear-gradient(145deg, #5f2118, #17110d 72%);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--library-gold,
+.custom-work-card__media--opal-gold {
+  background:
+    radial-gradient(circle at 72% 22%, rgba(185, 151, 85, 0.42), transparent 26%),
+    linear-gradient(145deg, #2b1a0c, #090807 72%);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--wedding-green {
+  background:
+    radial-gradient(circle at 70% 20%, rgba(212, 189, 130, 0.38), transparent 26%),
+    linear-gradient(145deg, #24482d, #102117 72%);
+  color: var(--color-cream-light);
+}
+
+.custom-work-card__media--birthday-gold {
+  background:
+    linear-gradient(145deg, rgba(185, 151, 85, 0.28), transparent 54%),
+    var(--color-cream-deep);
+  color: var(--color-ink);
+}
+
+.custom-work-card__copy {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.custom-work-card__category {
+  color: var(--color-red);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.custom-work-card__copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 7vw, 2.25rem);
+}
+
+.custom-work-card__copy p {
+  font-size: 0.95rem;
+}
+
+.custom-work-card__cta {
+  color: var(--color-red);
+  font-size: 0.86rem;
+  font-weight: 900;
+  margin-top: var(--space-2);
+}
+
+.custom-work-card__link:hover .custom-work-card__media,
+.custom-work-card__link:focus-visible .custom-work-card__media {
+  box-shadow: var(--shadow-soft);
+}
+
+.custom-work-card__link:hover .custom-work-card__deck--front,
+.custom-work-card__link:focus-visible .custom-work-card__deck--front {
+  transform: rotate(10deg) translateY(-0.25rem);
+}
+
+.custom-work-cta {
+  background: var(--color-ink);
+  color: var(--color-cream-light);
+  padding-block: var(--space-8);
+}
+
+.custom-work-cta__inner {
+  display: grid;
+  gap: var(--space-6);
+  margin-inline: auto;
+  width: min(100% - 2rem, var(--max-page));
+}
+
+.custom-work-cta__inner > div {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.custom-work-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 9vw, 4.25rem);
+  max-width: 13ch;
+}
+
+.custom-work-cta p {
+  color: rgba(255, 248, 235, 0.7);
+  max-width: 38rem;
+}
+
+.custom-work-cta .button {
+  background: var(--color-red);
+  border-color: var(--color-red);
+  justify-self: start;
+}
+
+.custom-work-detail {
+  background: var(--color-cream);
+}
+
+.custom-work-detail__hero,
+.custom-work-detail__overview,
+.custom-work-detail__gallery {
+  margin-inline: auto;
+  width: min(100% - 2rem, var(--max-page));
+}
+
+.custom-work-detail__hero {
+  display: grid;
+  gap: var(--space-6);
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.custom-work-detail__copy {
+  align-content: center;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.custom-work-detail__copy h1 {
+  font-size: clamp(2.65rem, 11vw, 5.25rem);
+}
+
+.custom-work-detail__copy p {
+  font-size: 1.08rem;
+  max-width: 38rem;
+}
+
+.custom-work-detail__copy small {
+  color: var(--color-muted);
+}
+
+.custom-work-detail__copy .button {
+  justify-self: start;
+}
+
+.custom-work-detail__overview {
+  border-top: 1px solid var(--color-line);
+  display: grid;
+  gap: var(--space-6);
+  padding-block: var(--space-7);
+}
+
+.custom-work-detail__section-heading {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.custom-work-detail__section-heading h2 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  max-width: 14ch;
+}
+
+.custom-work-detail__overview-copy {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 42rem;
+}
+
+.custom-work-detail__overview-copy > p:first-of-type {
+  color: var(--color-ink);
+  font-size: 1.08rem;
+}
+
+.custom-work-detail__meta {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-2);
+}
+
+.custom-work-detail__meta > div {
+  border-top: 1px solid var(--color-line);
+  display: grid;
+  gap: var(--space-1);
+  padding-top: var(--space-3);
+}
+
+.custom-work-detail__meta dt {
+  color: var(--color-red);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.custom-work-detail__meta dd {
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.custom-work-detail__case-sections {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-3);
+}
+
+.custom-work-detail__case-sections section {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.custom-work-detail__case-sections h3,
+.custom-work-detail__deliverables h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+}
+
+.custom-work-detail__proof {
+  background: var(--color-ink);
+  border-radius: var(--radius-sm);
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding: var(--space-5);
+}
+
+.custom-work-detail__proof span {
+  color: var(--color-gold-soft);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.custom-work-detail__proof p {
+  color: var(--color-cream-light);
+  font-size: 1.05rem;
+}
+
+.custom-work-detail__deliverables {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.custom-work-detail__deliverables ul {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-work-detail__deliverables li {
+  border-top: 1px solid var(--color-line);
+  padding-block: var(--space-3);
+}
+
+.custom-work-detail__labels {
+  display: grid;
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+}
+
+.custom-work-detail__labels li {
+  border-top: 1px solid var(--color-line);
+  color: var(--color-red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  padding-block: var(--space-3);
+  text-transform: uppercase;
+}
+
+.custom-work-detail__gallery {
+  display: grid;
+  gap: var(--space-5);
+  padding-bottom: var(--space-8);
+}
+
+.custom-work-detail__gallery-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.custom-work-detail__gallery-grid img {
+  border-radius: var(--radius-sm);
+  width: 100%;
+}
+
+.custom-work-detail--not-found .page-section {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.custom-work-detail--not-found .button {
+  justify-self: start;
+}
+
 .deck-grid {
   display: grid;
   gap: var(--space-4);
@@ -497,6 +943,12 @@ textarea:focus-visible {
 
 .deck-card__meta p {
   font-size: 0.94rem;
+}
+
+.deck-card__price {
+  color: var(--color-ink);
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .deck-card__cta {
@@ -1712,6 +2164,33 @@ textarea:focus-visible {
 }
 
 @media (min-width: 760px) {
+  .custom-work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .custom-work-cta__inner {
+    align-items: end;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .custom-work-detail__hero {
+    align-items: center;
+    grid-template-columns: minmax(0, 0.82fr) minmax(22rem, 1fr);
+    padding-block: 5.5rem;
+  }
+
+  .custom-work-detail__overview {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  }
+
+  .custom-work-detail__meta {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .custom-work-detail__gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .deck-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1908,6 +2387,10 @@ textarea:focus-visible {
 }
 
 @media (min-width: 1020px) {
+  .custom-work-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .catalogue-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

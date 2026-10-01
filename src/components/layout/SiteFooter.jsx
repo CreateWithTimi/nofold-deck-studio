@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 const footerLinks = [
   { to: '/editions', label: 'Editions' },
+  { to: '/custom-work', label: 'Custom Work' },
   { to: '/build-deck', label: 'Build Your Deck' },
   { to: '/about', label: 'About' },
 ]

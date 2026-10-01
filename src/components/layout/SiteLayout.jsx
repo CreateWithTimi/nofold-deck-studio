@@ -4,6 +4,7 @@ import SiteFooter from './SiteFooter.jsx'
 
 const navItems = [
   { to: '/editions', label: 'Editions' },
+  { to: '/custom-work', label: 'Custom Work' },
   { to: '/build-deck', label: 'Build Yours' },
   { to: '/about', label: 'About' },
 ]
